@@ -1,0 +1,6 @@
+@PRADCOInventorySystem_HostAddress = http://localhost:5279
+
+GET {{PRADCOInventorySystem_HostAddress}}/api/products
+Accept: application/json
+
+###
