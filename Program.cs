@@ -1,4 +1,6 @@
 
+using PRADCOInventorySystem.DAL;
+
 namespace PRADCOInventorySystem
 {
     public class Program
@@ -6,6 +8,9 @@ namespace PRADCOInventorySystem
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Add DapperContext to the service container
+            builder.Services.AddSingleton<DapperContext>();
 
             // Add services to the container.
 
